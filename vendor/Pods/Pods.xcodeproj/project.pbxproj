@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		059FCD53D51BC20788B01F563B4FFD50 /* NOZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD24308A1D97A152B8EA6ED052A3CA73 /* NOZUtils.m */; };
+		0A21C06EFAB97CF1CDEBE9C18C31F1A0 /* NOZDecompress.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E2015E23232BE8B5DF396965875AE9 /* NOZDecompress.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0DE70D2A7F4F85EC76994890D3CFB230 /* NOZCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = B72124E20DDD2BD2C87CFB2326A069F3 /* NOZCompress.m */; };
+		1939E72DCF7E6C50B3C82702269DF157 /* ZipUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86534A1159A5C1CFBDC87036598D95F5 /* ZipUtilities-dummy.m */; };
+		3638DA17DC0A271117C02BDFD8B0B39C /* NOZCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 159BDCB9C2F504987DCFA9FDBC225AAF /* NOZCompression.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		377505717ACD6E38A5788B692885B95E /* NOZDeflateCoders.m in Sources */ = {isa = PBXBuildFile; fileRef = 48360F12BF16E297ED43E76930E922E6 /* NOZDeflateCoders.m */; };
+		3AA4C01710E88C6AB51503F101CC12AA /* NOZError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAA8CDC3F8FA728C93E8BE81B37C849 /* NOZError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50E83B7C50E0D1825339AC0B069CBDC7 /* NOZZipper.h in Headers */ = {isa = PBXBuildFile; fileRef = E00130E9B08E72ADF1104F46113AAC2C /* NOZZipper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55B5EBAEC55F3D9BF2F518E343F11CD6 /* NOZRawCoders.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A8BFF9947E144F61CAC0C18A41033 /* NOZRawCoders.m */; };
+		5DB1218AC61714FA68877530584DD529 /* NSStream+NOZAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE75AA69CF2042BD41B8CE9EC7C1599 /* NSStream+NOZAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6740C5E2073D99945B600AC94C4CA909 /* NOZSyncStepOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B111EA5D37D502BCFD66FF4BF75A8B5 /* NOZSyncStepOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FF5E3561EA2D8D88B26088699A21D48 /* NOZ_Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 925E44CB94792702F0EF5A3380DBB0AD /* NOZ_Project.m */; };
+		853957C17FB78DF39B7C337B87EAAEE5 /* NSData+NOZAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F04F61A8596548F6FF8C92B7DA4B66 /* NSData+NOZAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C9988ADD6AAD3B7DB4D045FE66144B9 /* NOZUnzipper.h in Headers */ = {isa = PBXBuildFile; fileRef = 322809CA9EBFED2C2ED1E5F459ECA008 /* NOZUnzipper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9412F0BBDC2699F4CC23179CFC2D8388 /* NOZZipEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F79596614B9B43F1AE70894CC31C41B7 /* NOZZipEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D71869429F65CD4125C276E86DCE572 /* NOZDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 41014BA165FB8C9F24FF35BF3120CF84 /* NOZDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ABD26FF14A8E435B366A33CC6E7D7E66 /* NOZZipEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E1889B6C93832A26D0F8265C235B98 /* NOZZipEntry.m */; };
+		B247006F6283B3039EE01897473CC0AA /* NOZError.m in Sources */ = {isa = PBXBuildFile; fileRef = C44447DACE97573F6009464F9E0216E0 /* NOZError.m */; };
+		B3B618CD5769D12F9B5FCC7EE00544B3 /* NOZZipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCEEF65C28D729751D210F03E76418 /* NOZZipper.m */; };
+		C8D56B613B4276CC4900A333166B1E39 /* NOZCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEA2B8051315C17201CE2FAD1E68820 /* NOZCompress.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C94BED55FD0A2F20AB8CDB3A3B5E08EB /* NOZDecompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DC6C9F314E6DAF20BB32A2F60AC251 /* NOZDecompress.m */; };
+		D1F74F2B01AA2376624825A385DE1548 /* NOZUtils_Project.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F05983C3ED49D3ED825D6668BF0AB9 /* NOZUtils_Project.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D21D91EF5593099C301C58588CD593A1 /* NOZEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E843663B9DE669F26589DA48E4FF6A24 /* NOZEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD6459D60C3C3A323914728E0745C9F6 /* NSData+NOZAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D04F961E4B73350901ECB156FF01DC /* NSData+NOZAdditions.m */; };
+		E69685F2AA1DCB9F88D93CB5D2900D31 /* NOZSyncStepOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59632CC44E2D6DE5D517474CC6DC7544 /* NOZSyncStepOperation.m */; };
+		E8ABC7CAFA22F15AB42F6C01CE30378B /* NSStream+NOZAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17787B1EC89A9D2C5884790FFC371853 /* NSStream+NOZAdditions.m */; };
+		F33777CB91AE9121BCE0E25B1527E90C /* NOZ_Project.h in Headers */ = {isa = PBXBuildFile; fileRef = 199ACADE4E9E8390D93E84F24FD2F321 /* NOZ_Project.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F873D0110EB06F546ACC7D8B8E1DAA0D /* Pods-RubyMotion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15BA2A940560D2A0C77A15B20151A9 /* Pods-RubyMotion-dummy.m */; };
+		FA6B3919B5F0B342C82DA5B4AC295E0B /* NOZUnzipper.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7B37F50551B87F24566938CD2D09 /* NOZUnzipper.m */; };
+		FB168130981CF79AB8DB44A954C6A025 /* NOZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCF5C6E5769B274E618AC36460F8996 /* NOZUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FDA43108B92E6AA4F208E6038E3B9D03 /* NOZCompressionLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEFB00A6707AB8E076D3A6F59FBCF54 /* NOZCompressionLibrary.m */; };
+		FFEFBFCF07BE7D51B5C48DFE3374F4CF /* NOZCompressionLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F109F2DD441FD2C9A61CB6F2F18A52 /* NOZCompressionLibrary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		469371B6720495995EFC20EF2DC14EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30DCB4A052746292D75DFD59612950C5;
+			remoteInfo = ZipUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BCEEF65C28D729751D210F03E76418 /* NOZZipper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZZipper.m; path = ZipUtilities/NOZZipper.m; sourceTree = "<group>"; };
+		0DC2C64A19F0947D88E73341E259375A /* Pods-RubyMotion-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RubyMotion-resources.sh"; sourceTree = "<group>"; };
+		159BDCB9C2F504987DCFA9FDBC225AAF /* NOZCompression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZCompression.h; path = ZipUtilities/NOZCompression.h; sourceTree = "<group>"; };
+		17787B1EC89A9D2C5884790FFC371853 /* NSStream+NOZAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSStream+NOZAdditions.m"; path = "ZipUtilities/NSStream+NOZAdditions.m"; sourceTree = "<group>"; };
+		199ACADE4E9E8390D93E84F24FD2F321 /* NOZ_Project.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZ_Project.h; path = ZipUtilities/NOZ_Project.h; sourceTree = "<group>"; };
+		1B111EA5D37D502BCFD66FF4BF75A8B5 /* NOZSyncStepOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZSyncStepOperation.h; path = ZipUtilities/NOZSyncStepOperation.h; sourceTree = "<group>"; };
+		246C3EA1FE9B85929478E8BBA3113606 /* ZipUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipUtilities.xcconfig; sourceTree = "<group>"; };
+		28D04F961E4B73350901ECB156FF01DC /* NSData+NOZAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NOZAdditions.m"; path = "ZipUtilities/NSData+NOZAdditions.m"; sourceTree = "<group>"; };
+		2FEA2B8051315C17201CE2FAD1E68820 /* NOZCompress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZCompress.h; path = ZipUtilities/NOZCompress.h; sourceTree = "<group>"; };
+		322809CA9EBFED2C2ED1E5F459ECA008 /* NOZUnzipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZUnzipper.h; path = ZipUtilities/NOZUnzipper.h; sourceTree = "<group>"; };
+		352D8BDCA3A9866A2E9023A6EA6D7B5E /* libPods-RubyMotion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RubyMotion.a"; path = "libPods-RubyMotion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41014BA165FB8C9F24FF35BF3120CF84 /* NOZDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZDecoder.h; path = ZipUtilities/NOZDecoder.h; sourceTree = "<group>"; };
+		48360F12BF16E297ED43E76930E922E6 /* NOZDeflateCoders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZDeflateCoders.m; path = ZipUtilities/NOZDeflateCoders.m; sourceTree = "<group>"; };
+		55F109F2DD441FD2C9A61CB6F2F18A52 /* NOZCompressionLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZCompressionLibrary.h; path = ZipUtilities/NOZCompressionLibrary.h; sourceTree = "<group>"; };
+		56CE9D1528758806EFC302C3E076FDD5 /* ZipUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipUtilities-prefix.pch"; sourceTree = "<group>"; };
+		59632CC44E2D6DE5D517474CC6DC7544 /* NOZSyncStepOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZSyncStepOperation.m; path = ZipUtilities/NOZSyncStepOperation.m; sourceTree = "<group>"; };
+		5A15BA2A940560D2A0C77A15B20151A9 /* Pods-RubyMotion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RubyMotion-dummy.m"; sourceTree = "<group>"; };
+		5DAA8CDC3F8FA728C93E8BE81B37C849 /* NOZError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZError.h; path = ZipUtilities/NOZError.h; sourceTree = "<group>"; };
+		61E1889B6C93832A26D0F8265C235B98 /* NOZZipEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZZipEntry.m; path = ZipUtilities/NOZZipEntry.m; sourceTree = "<group>"; };
+		6568C50D8080A2B16163D6219B065C71 /* Pods-RubyMotion-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RubyMotion-acknowledgements.plist"; sourceTree = "<group>"; };
+		6CE75AA69CF2042BD41B8CE9EC7C1599 /* NSStream+NOZAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSStream+NOZAdditions.h"; path = "ZipUtilities/NSStream+NOZAdditions.h"; sourceTree = "<group>"; };
+		73DC6C9F314E6DAF20BB32A2F60AC251 /* NOZDecompress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZDecompress.m; path = ZipUtilities/NOZDecompress.m; sourceTree = "<group>"; };
+		80FA7E50EC7D03442FD1131412FE6B38 /* Pods-RubyMotion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyMotion.debug.xcconfig"; sourceTree = "<group>"; };
+		86534A1159A5C1CFBDC87036598D95F5 /* ZipUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipUtilities-dummy.m"; sourceTree = "<group>"; };
+		86E300100FCB4AD3B0966C9A82D61FB6 /* Pods-RubyMotion-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RubyMotion-acknowledgements.markdown"; sourceTree = "<group>"; };
+		925E44CB94792702F0EF5A3380DBB0AD /* NOZ_Project.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZ_Project.m; path = ZipUtilities/NOZ_Project.m; sourceTree = "<group>"; };
+		A2FE7B37F50551B87F24566938CD2D09 /* NOZUnzipper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZUnzipper.m; path = ZipUtilities/NOZUnzipper.m; sourceTree = "<group>"; };
+		B72124E20DDD2BD2C87CFB2326A069F3 /* NOZCompress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZCompress.m; path = ZipUtilities/NOZCompress.m; sourceTree = "<group>"; };
+		B84119BD16176FE991FCBD69FBD870DD /* Pods-RubyMotion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyMotion.release.xcconfig"; sourceTree = "<group>"; };
+		BD24308A1D97A152B8EA6ED052A3CA73 /* NOZUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZUtils.m; path = ZipUtilities/NOZUtils.m; sourceTree = "<group>"; };
+		BFCF5C6E5769B274E618AC36460F8996 /* NOZUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZUtils.h; path = ZipUtilities/NOZUtils.h; sourceTree = "<group>"; };
+		C44447DACE97573F6009464F9E0216E0 /* NOZError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZError.m; path = ZipUtilities/NOZError.m; sourceTree = "<group>"; };
+		CBE1FE7FB87DA055BE7673CAD2E0FA52 /* Pods-RubyMotion-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RubyMotion-frameworks.sh"; sourceTree = "<group>"; };
+		CFEFB00A6707AB8E076D3A6F59FBCF54 /* NOZCompressionLibrary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZCompressionLibrary.m; path = ZipUtilities/NOZCompressionLibrary.m; sourceTree = "<group>"; };
+		D2690B49CE453E51B6B8E009C181A1A9 /* libZipUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipUtilities.a; path = libZipUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4A8BFF9947E144F61CAC0C18A41033 /* NOZRawCoders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZRawCoders.m; path = ZipUtilities/NOZRawCoders.m; sourceTree = "<group>"; };
+		E00130E9B08E72ADF1104F46113AAC2C /* NOZZipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZZipper.h; path = ZipUtilities/NOZZipper.h; sourceTree = "<group>"; };
+		E0F05983C3ED49D3ED825D6668BF0AB9 /* NOZUtils_Project.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZUtils_Project.h; path = ZipUtilities/NOZUtils_Project.h; sourceTree = "<group>"; };
+		E843663B9DE669F26589DA48E4FF6A24 /* NOZEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZEncoder.h; path = ZipUtilities/NOZEncoder.h; sourceTree = "<group>"; };
+		F79596614B9B43F1AE70894CC31C41B7 /* NOZZipEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZZipEntry.h; path = ZipUtilities/NOZZipEntry.h; sourceTree = "<group>"; };
+		F8F04F61A8596548F6FF8C92B7DA4B66 /* NSData+NOZAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NOZAdditions.h"; path = "ZipUtilities/NSData+NOZAdditions.h"; sourceTree = "<group>"; };
+		F9E2015E23232BE8B5DF396965875AE9 /* NOZDecompress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZDecompress.h; path = ZipUtilities/NOZDecompress.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1827375541F9A1EA5E6FC47934CABDF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCD42CB896761A998A1B2DC757DEF8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082D35B3D886EAADC8C99B4F3B2923B7 /* ZipUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				199ACADE4E9E8390D93E84F24FD2F321 /* NOZ_Project.h */,
+				925E44CB94792702F0EF5A3380DBB0AD /* NOZ_Project.m */,
+				2FEA2B8051315C17201CE2FAD1E68820 /* NOZCompress.h */,
+				B72124E20DDD2BD2C87CFB2326A069F3 /* NOZCompress.m */,
+				159BDCB9C2F504987DCFA9FDBC225AAF /* NOZCompression.h */,
+				55F109F2DD441FD2C9A61CB6F2F18A52 /* NOZCompressionLibrary.h */,
+				CFEFB00A6707AB8E076D3A6F59FBCF54 /* NOZCompressionLibrary.m */,
+				41014BA165FB8C9F24FF35BF3120CF84 /* NOZDecoder.h */,
+				F9E2015E23232BE8B5DF396965875AE9 /* NOZDecompress.h */,
+				73DC6C9F314E6DAF20BB32A2F60AC251 /* NOZDecompress.m */,
+				48360F12BF16E297ED43E76930E922E6 /* NOZDeflateCoders.m */,
+				E843663B9DE669F26589DA48E4FF6A24 /* NOZEncoder.h */,
+				5DAA8CDC3F8FA728C93E8BE81B37C849 /* NOZError.h */,
+				C44447DACE97573F6009464F9E0216E0 /* NOZError.m */,
+				DA4A8BFF9947E144F61CAC0C18A41033 /* NOZRawCoders.m */,
+				1B111EA5D37D502BCFD66FF4BF75A8B5 /* NOZSyncStepOperation.h */,
+				59632CC44E2D6DE5D517474CC6DC7544 /* NOZSyncStepOperation.m */,
+				322809CA9EBFED2C2ED1E5F459ECA008 /* NOZUnzipper.h */,
+				A2FE7B37F50551B87F24566938CD2D09 /* NOZUnzipper.m */,
+				BFCF5C6E5769B274E618AC36460F8996 /* NOZUtils.h */,
+				BD24308A1D97A152B8EA6ED052A3CA73 /* NOZUtils.m */,
+				E0F05983C3ED49D3ED825D6668BF0AB9 /* NOZUtils_Project.h */,
+				F79596614B9B43F1AE70894CC31C41B7 /* NOZZipEntry.h */,
+				61E1889B6C93832A26D0F8265C235B98 /* NOZZipEntry.m */,
+				E00130E9B08E72ADF1104F46113AAC2C /* NOZZipper.h */,
+				04BCEEF65C28D729751D210F03E76418 /* NOZZipper.m */,
+				F8F04F61A8596548F6FF8C92B7DA4B66 /* NSData+NOZAdditions.h */,
+				28D04F961E4B73350901ECB156FF01DC /* NSData+NOZAdditions.m */,
+				6CE75AA69CF2042BD41B8CE9EC7C1599 /* NSStream+NOZAdditions.h */,
+				17787B1EC89A9D2C5884790FFC371853 /* NSStream+NOZAdditions.m */,
+				633A885F77C60363528B65CBB650E16F /* Support Files */,
+			);
+			name = ZipUtilities;
+			path = ZipUtilities;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E3991177E8374FD9945B0AA5F1C1FC9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B6285C98423323C96A0AA35FD86449D /* Pods-RubyMotion */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		633A885F77C60363528B65CBB650E16F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				246C3EA1FE9B85929478E8BBA3113606 /* ZipUtilities.xcconfig */,
+				86534A1159A5C1CFBDC87036598D95F5 /* ZipUtilities-dummy.m */,
+				56CE9D1528758806EFC302C3E076FDD5 /* ZipUtilities-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZipUtilities";
+			sourceTree = "<group>";
+		};
+		7B6285C98423323C96A0AA35FD86449D /* Pods-RubyMotion */ = {
+			isa = PBXGroup;
+			children = (
+				86E300100FCB4AD3B0966C9A82D61FB6 /* Pods-RubyMotion-acknowledgements.markdown */,
+				6568C50D8080A2B16163D6219B065C71 /* Pods-RubyMotion-acknowledgements.plist */,
+				5A15BA2A940560D2A0C77A15B20151A9 /* Pods-RubyMotion-dummy.m */,
+				CBE1FE7FB87DA055BE7673CAD2E0FA52 /* Pods-RubyMotion-frameworks.sh */,
+				0DC2C64A19F0947D88E73341E259375A /* Pods-RubyMotion-resources.sh */,
+				80FA7E50EC7D03442FD1131412FE6B38 /* Pods-RubyMotion.debug.xcconfig */,
+				B84119BD16176FE991FCBD69FBD870DD /* Pods-RubyMotion.release.xcconfig */,
+			);
+			name = "Pods-RubyMotion";
+			path = "Target Support Files/Pods-RubyMotion";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				ED922A8628CC93F6B14ECAF901F4DB28 /* Pods */,
+				C7AE4743ECD512938510CED6D99FCA6A /* Products */,
+				5E3991177E8374FD9945B0AA5F1C1FC9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C7AE4743ECD512938510CED6D99FCA6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				352D8BDCA3A9866A2E9023A6EA6D7B5E /* libPods-RubyMotion.a */,
+				D2690B49CE453E51B6B8E009C181A1A9 /* libZipUtilities.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED922A8628CC93F6B14ECAF901F4DB28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				082D35B3D886EAADC8C99B4F3B2923B7 /* ZipUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		70A08F95EF16499A145EDE11AFCC905C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33777CB91AE9121BCE0E25B1527E90C /* NOZ_Project.h in Headers */,
+				C8D56B613B4276CC4900A333166B1E39 /* NOZCompress.h in Headers */,
+				3638DA17DC0A271117C02BDFD8B0B39C /* NOZCompression.h in Headers */,
+				FFEFBFCF07BE7D51B5C48DFE3374F4CF /* NOZCompressionLibrary.h in Headers */,
+				9D71869429F65CD4125C276E86DCE572 /* NOZDecoder.h in Headers */,
+				0A21C06EFAB97CF1CDEBE9C18C31F1A0 /* NOZDecompress.h in Headers */,
+				D21D91EF5593099C301C58588CD593A1 /* NOZEncoder.h in Headers */,
+				3AA4C01710E88C6AB51503F101CC12AA /* NOZError.h in Headers */,
+				6740C5E2073D99945B600AC94C4CA909 /* NOZSyncStepOperation.h in Headers */,
+				8C9988ADD6AAD3B7DB4D045FE66144B9 /* NOZUnzipper.h in Headers */,
+				FB168130981CF79AB8DB44A954C6A025 /* NOZUtils.h in Headers */,
+				D1F74F2B01AA2376624825A385DE1548 /* NOZUtils_Project.h in Headers */,
+				9412F0BBDC2699F4CC23179CFC2D8388 /* NOZZipEntry.h in Headers */,
+				50E83B7C50E0D1825339AC0B069CBDC7 /* NOZZipper.h in Headers */,
+				853957C17FB78DF39B7C337B87EAAEE5 /* NSData+NOZAdditions.h in Headers */,
+				5DB1218AC61714FA68877530584DD529 /* NSStream+NOZAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7E3FB0D6F7DF1531CE65AC09C867A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30DCB4A052746292D75DFD59612950C5 /* ZipUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB5884EB4259F950549C0671ACC2F48 /* Build configuration list for PBXNativeTarget "ZipUtilities" */;
+			buildPhases = (
+				70A08F95EF16499A145EDE11AFCC905C /* Headers */,
+				B786460CD6C186F81AD6956334426366 /* Sources */,
+				1827375541F9A1EA5E6FC47934CABDF6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipUtilities;
+			productName = ZipUtilities;
+			productReference = D2690B49CE453E51B6B8E009C181A1A9 /* libZipUtilities.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6576FE8B6D216F6AB31D09DE554E0D46 /* Pods-RubyMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A04B06E8E63B21F4CAED2FCA3AABD24 /* Build configuration list for PBXNativeTarget "Pods-RubyMotion" */;
+			buildPhases = (
+				FC7E3FB0D6F7DF1531CE65AC09C867A1 /* Headers */,
+				1291AFD1AC7EE8F790B77B6A690BE3FE /* Sources */,
+				2FCD42CB896761A998A1B2DC757DEF8F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B6711223464962C178CC2D81174175 /* PBXTargetDependency */,
+			);
+			name = "Pods-RubyMotion";
+			productName = "Pods-RubyMotion";
+			productReference = 352D8BDCA3A9866A2E9023A6EA6D7B5E /* libPods-RubyMotion.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C7AE4743ECD512938510CED6D99FCA6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6576FE8B6D216F6AB31D09DE554E0D46 /* Pods-RubyMotion */,
+				30DCB4A052746292D75DFD59612950C5 /* ZipUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1291AFD1AC7EE8F790B77B6A690BE3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F873D0110EB06F546ACC7D8B8E1DAA0D /* Pods-RubyMotion-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B786460CD6C186F81AD6956334426366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF5E3561EA2D8D88B26088699A21D48 /* NOZ_Project.m in Sources */,
+				0DE70D2A7F4F85EC76994890D3CFB230 /* NOZCompress.m in Sources */,
+				FDA43108B92E6AA4F208E6038E3B9D03 /* NOZCompressionLibrary.m in Sources */,
+				C94BED55FD0A2F20AB8CDB3A3B5E08EB /* NOZDecompress.m in Sources */,
+				377505717ACD6E38A5788B692885B95E /* NOZDeflateCoders.m in Sources */,
+				B247006F6283B3039EE01897473CC0AA /* NOZError.m in Sources */,
+				55B5EBAEC55F3D9BF2F518E343F11CD6 /* NOZRawCoders.m in Sources */,
+				E69685F2AA1DCB9F88D93CB5D2900D31 /* NOZSyncStepOperation.m in Sources */,
+				FA6B3919B5F0B342C82DA5B4AC295E0B /* NOZUnzipper.m in Sources */,
+				059FCD53D51BC20788B01F563B4FFD50 /* NOZUtils.m in Sources */,
+				ABD26FF14A8E435B366A33CC6E7D7E66 /* NOZZipEntry.m in Sources */,
+				B3B618CD5769D12F9B5FCC7EE00544B3 /* NOZZipper.m in Sources */,
+				DD6459D60C3C3A323914728E0745C9F6 /* NSData+NOZAdditions.m in Sources */,
+				E8ABC7CAFA22F15AB42F6C01CE30378B /* NSStream+NOZAdditions.m in Sources */,
+				1939E72DCF7E6C50B3C82702269DF157 /* ZipUtilities-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91B6711223464962C178CC2D81174175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipUtilities;
+			target = 30DCB4A052746292D75DFD59612950C5 /* ZipUtilities */;
+			targetProxy = 469371B6720495995EFC20EF2DC14EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32663A5EA1B9918DED43AA73FFFAB510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FA7E50EC7D03442FD1131412FE6B38 /* Pods-RubyMotion.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4D5E23992597B9B42C68ABD609C9AC3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246C3EA1FE9B85929478E8BBA3113606 /* ZipUtilities.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipUtilities/ZipUtilities-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZipUtilities;
+				PRODUCT_NAME = ZipUtilities;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		9992CE2C5F65320F0081E9A0ACAFFF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A4C5E5377ABBDBB932ADCEA6BC00AD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246C3EA1FE9B85929478E8BBA3113606 /* ZipUtilities.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipUtilities/ZipUtilities-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZipUtilities;
+				PRODUCT_NAME = ZipUtilities;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		AF6FE305787E74852C51DD24CB4B9E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84119BD16176FE991FCBD69FBD870DD /* Pods-RubyMotion.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D79C9CF82E0503B6800775A4C33DD9A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79C9CF82E0503B6800775A4C33DD9A7 /* Debug */,
+				9992CE2C5F65320F0081E9A0ACAFFF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EB5884EB4259F950549C0671ACC2F48 /* Build configuration list for PBXNativeTarget "ZipUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5E23992597B9B42C68ABD609C9AC3A /* Debug */,
+				A4C5E5377ABBDBB932ADCEA6BC00AD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A04B06E8E63B21F4CAED2FCA3AABD24 /* Build configuration list for PBXNativeTarget "Pods-RubyMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32663A5EA1B9918DED43AA73FFFAB510 /* Debug */,
+				AF6FE305787E74852C51DD24CB4B9E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
